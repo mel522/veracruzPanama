@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Videos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212; /* Fondo oscuro */
+            color: #e0e0e0; /* Texto claro */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+        }
+        .absolute.bottom-0.left-0.right-0 {
+            background-color: rgba(51, 51, 51, 0.8); /* Fondo oscuro para los subtítulos con opacidad */
+            color: #e0e0e0; /* Texto claro para los subtítulos */
+        }
+        .text-sm {
+            color: #e0e0e0; /* Texto claro */
+        }
+    </style>
+</head>
+<body>
+    <header class="header flex items-center justify-between p-4 border-b">
+        <div class="flex items-center space-x-4"></div>
+        <nav class="flex space-x-4">
+            <a class="text-sm" href="index.html"><b><big>Inicio</big></b></a>
+            <a class="text-sm" href="galeria-imagenes.html"><b><big>Imagenes</big></b></a>
+            <a class="text-sm" href="informa.html"><b><big>Información</big></b></a>
+        </nav>
+        <div class="flex items-center space-x-4"></div>
+    </header>
+    <main class="p-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="relative">
+                <video width="640" height="360" controls>
+                    <source src="videos/vid1.mp4" type="video/mp4">
+                </video>
+                <div class="absolute bottom-0 left-0 right-0 text-white p-2 text-center">
+                    En camino para el Mr precio
+                </div>
+            </div>
+            <div class="relative">
+                <video width="640" height="360" controls>
+                    <source src="videos/vid2.mp4" type="video/mp4">
+                </video>
+                <div class="absolute bottom-0 left-0 right-0 text-white p-2 text-center">
+                    Recorrido por la calle Principal
+                </div>
+            </div>
+            <div class="relative">
+                <video width="640" height="360" controls>
+                    <source src="videos/vid3.mp4" type="video/mp4">
+                </video>
+                <div class="absolute bottom-0 left-0 right-0 text-white p-2 text-center">
+                    Un poco de las calles de Veracruz
+                </div>
+            </div>
+            <div class="relative">
+                <video width="640" height="360" controls>
+                    <source src="videos/vid4.mp4" type="video/mp4">
+                </video>
+                <div class="absolute bottom-0 left-0 right-0 text-white p-2 text-center">
+                    Recorrido por los Puestos de venta de la Principal
+                </div>
+            </div>
+            <div class="relative">
+                <video width="640" height="360" controls>
+                    <source src="videos/vid5.mp4" type="video/mp4">
+                </video>
+                <div class="absolute bottom-0 left-0 right-0 text-white p-2 text-center">
+                    Un recorrido rapido por la calle de Veracruz
+                </div>
+            </div>
+            <div class="relative">
+                <video width="640" height="360" controls>
+                    <source src="videos/vid6.mp4" type="video/mp4">
+                </video>
+                <div class="absolute bottom-0 left-0 right-0 text-white p-2 text-center">
+                    Un atardecer en la playa de Chumical
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="relative">
+                <video width="640" height="360" controls>
+                    <source src="videos/vid7.mp4" type="video/mp4">
+                </video>
+                <div class="absolute bottom-0 left-0 right-0 text-white p-2 text-center">
+                    Caminata por la Playa
+                </div>
+            </div>
+            <div class="relative">
+                <video width="640" height="360" controls>
+                    <source src="videos/vid8.mp4" type="video/mp4">
+                </video>
+                <div class="absolute bottom-0 left-0 right-0 text-white p-2 text-center">
+                    Desfile de banda del 3 de Noviembre
+                </div>
+            </div>
+            <div class="relative">
+                <video width="640" height="360" controls>
+                    <source src="videos/vid9.mp4" type="video/mp4">
+                </video>
+                <div class="absolute bottom-0 left-0 right-0 text-white p-2 text-center">
+                    En camino para Chumical de Veracruz
+                </div>
+            </div>
+            <div class="relative">
+                <video width="640" height="360" controls>
+                    <source src="videos/vid10.mp4" type="video/mp4">
+                </video>
+                <div class="absolute bottom-0 left-0 right-0 text-white p-2 text-center">
+                    Un poco de naturaleza
+                </div>
+            </div>
+            <div class="relative">
+                <video width="640" height="360" controls>
+                    <source src="videos/vid11.mp4" type="video/mp4">
+                </video>
+                <div class="absolute bottom-0 left-0 right-0 text-white p-2 text-center">
+                    Veracruz en la Noche
+                </div>
+            </div>
+            <div class="relative">
+                <video width="640" height="360" controls>
+                    <source src="videos/vid12.mp4" type="video/mp4">
+                </video>
+                <div class="absolute bottom-0 left-0 right-0 text-white p-2 text-center">
+                    Un poco de Veracruz
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

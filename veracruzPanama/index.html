@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Veracruz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212; /* Fondo oscuro */
+            color: #e0e0e0; /* Texto claro */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .zoom { 
+            transition: transform 0.2s; /* Suaviza la transición */ 
+            cursor: pointer; /* Cambia el cursor a puntero al pasar sobre la imagen */ 
+        } 
+        .zoom:hover { 
+            transform: scale(1.5); /* Aumenta la imagen al 150% de su tamaño original */
+        }
+        .button-container {
+            display: flex;
+            justify-content: center; /* Centrar los botones */
+            align-items: center;
+            flex: 1; /* Para ocupar el espacio restante */
+        }
+        .button-container button {
+            margin: 0 10px;
+            color: #e0e0e0;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .button-container button:hover {
+            color: #ffffff;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="bg-black text-white text-center py-2 text-sm">
+        Nuestro Barrio
+    </div>
+    <!-- Header -->
+    <header class="bg-black shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="flex items-center">
+                <img alt="logo" class="h-10 zoom" height="30" src="imagenes/logo.jpg" width="100"/>
+            </div>
+            <div class="nav-container">
+                <nav class="button-container">
+                    <button>
+                        <a href="galeria-imagenes.html"><big><b>Imagines</b></big></a>
+                    </button>
+                    <button>
+                        <a href="galeria-videos.html"><big><b>Videos</b></big></a>
+                    </button>
+                    <button>
+                        <a href="informa.html"><big><b>Información</b></big></a>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Main Banner -->
+    <section class="relative">
+        <img alt="inicio" class="w-full h-auto" height="600" src="imagenes/inicio.jpeg" width="1910"/>
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
+            <h1 class="text-4xl md:text-9xl font-bold">VERACRUZ</h1>
+            <p class="mt-2 text-lg md:text-4xl">Un Pueblo Olvidado</p>
+        </div>
+    </section>
+    <div class="bg-black text-white text-center py-2 text-sm">
+        <big><big>
+            Creadores: Angelo Alonso, Yorgelis Martinez, Francisco Polanco, Melanie Vega y Nazaret Villarreal__   
+            Fecha: 4/12/2024
+        </big></big>
+    </div>
+</body>
+</html>
